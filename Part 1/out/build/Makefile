@@ -116,6 +116,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named EX1
+
+# Build rule for target.
+EX1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EX1
+.PHONY : EX1
+
+# fast build rule for target.
+EX1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/build
+.PHONY : EX1/fast
+
+Exercise_1.o: Exercise_1.c.o
+.PHONY : Exercise_1.o
+
+# target to build an object file
+Exercise_1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/Exercise_1.c.o
+.PHONY : Exercise_1.c.o
+
+Exercise_1.i: Exercise_1.c.i
+.PHONY : Exercise_1.i
+
+# target to preprocess a source file
+Exercise_1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/Exercise_1.c.i
+.PHONY : Exercise_1.c.i
+
+Exercise_1.s: Exercise_1.c.s
+.PHONY : Exercise_1.s
+
+# target to generate assembly for a file
+Exercise_1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX1.dir/build.make CMakeFiles/EX1.dir/Exercise_1.c.s
+.PHONY : Exercise_1.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... EX1"
+	@echo "... Exercise_1.o"
+	@echo "... Exercise_1.i"
+	@echo "... Exercise_1.s"
 .PHONY : help
 
 

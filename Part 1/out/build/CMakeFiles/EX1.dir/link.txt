@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/EX1.dir/Exercise_1.c.o -o EX1 
