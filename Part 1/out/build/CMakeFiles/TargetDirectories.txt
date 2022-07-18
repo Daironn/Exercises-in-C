@@ -1,0 +1,2 @@
+/home/dairon/VS/Exercises-in-C/Part 1/out/build/CMakeFiles/edit_cache.dir
+/home/dairon/VS/Exercises-in-C/Part 1/out/build/CMakeFiles/rebuild_cache.dir
